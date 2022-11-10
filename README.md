@@ -15,7 +15,7 @@ Not have apikey? Open: https://danzzapi.xyz
 > pkg install imagemagick
 > pkg install libwebp
 > pkg install yarn
-> git clone https://github.com/Danzzxcodes/basebot-v1
+> git clone https://github.com/Danzzxcodes/danzz-mdv1
 > cd basebot-v1
 > yarn
 > npm start
@@ -28,7 +28,7 @@ Not have apikey? Open: https://danzzapi.xyz
 * Download And Install Ffmpeg [`Click Here`](https://ffmpeg.org/download.html)
 
 ```
-> git clone https://github.com/Danzzxcodes/basebot-v1
+> git clone https://github.com/Danzzxcodes/danzz-mdv1
 > cd basebot-v1
 > npm i
 > npm start
@@ -38,7 +38,7 @@ Not have apikey? Open: https://danzzapi.xyz
 1. Regist in https://replit.com
 2. Click plus button
 3. Click import from github
-4. Enter link: https://github.com/Danzzxcodes/basebot-v1
+4. Enter link: https://github.com/Danzzxcodes/danzz-mdv1
 5. Run/click green button
 
 ## Replit buildpack
@@ -65,6 +65,7 @@ https://github.com/Danzzxcodes/heroku-buildpack-webp-binaries.git
 * Asupan
 * Cecan
 * Cogan
+* Anime
 * Search
 * Text pro
 * Photo oxy
