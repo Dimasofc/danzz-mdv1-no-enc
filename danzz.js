@@ -21,6 +21,7 @@ const {
 
 const fs = require('fs')
 const os = require('os')
+const speed = require('performance-now')
 const axios = require('axios')
 const path = require('path')
 const util = require('util')
