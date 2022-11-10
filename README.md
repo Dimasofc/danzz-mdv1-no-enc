@@ -16,7 +16,7 @@ Not have apikey? Open: https://danzzapi.xyz
 > pkg install libwebp
 > pkg install yarn
 > git clone https://github.com/Danzzxcodes/danzz-mdv1
-> cd basebot-v1
+> cd danzz-mdv1
 > yarn
 > npm start
 ```
@@ -29,7 +29,7 @@ Not have apikey? Open: https://danzzapi.xyz
 
 ```
 > git clone https://github.com/Danzzxcodes/danzz-mdv1
-> cd basebot-v1
+> cd danzz-mdv1
 > npm i
 > npm start
 ```
