@@ -21,7 +21,6 @@ const {
 
 const fs = require('fs')
 const os = require('os')
-const speed = require('performance-now')
 const axios = require('axios')
 const path = require('path')
 const util = require('util')
@@ -102,7 +101,7 @@ module.exports = danzz = async (danzz, m, store, chatUpdate) => {
         const isOwner = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const myNumber = m.sender == botNumber ? true : false
         const sender = m.isGroup ? (mek.key.participant ? mek.key.participant : mek.participant) : mek.key.remoteJid
-        //const isRegist = cekUser(sender)
+        const isRegist = cekUser(sender)
         
         // Group
         const groupMetadata = m.isGroup ? await danzz.groupMetadata(m.chat).catch(e => {}) : ''
@@ -629,6 +628,7 @@ danzz.sendMessage(sender, { image: { url: ppuser }, caption: teks_daftar }, { qu
 }
 break
             case 'menu': case 'help': case 'm': {
+            if (!isRegist) throw mess.notregist
             let me = m.sender
             let menu = `
 *Hello ${pushname} 👋, ${sayyingTime}*,`
@@ -2174,6 +2174,7 @@ let teks = `══✪〘 *👥 Tag All* 〙✪══
 	  
 		// Others
 		case 'jadibot': {
+		if (!isOwner) throw mess.owner
 jadibot(danzz, ftroli, from)
 }
 break
