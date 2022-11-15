@@ -2174,6 +2174,7 @@ let teks = `══✪〘 *👥 Tag All* 〙✪══
 	  
 		// Others
 		case 'jadibot': {
+		if (!isOwner) throw mess.owner
 jadibot(danzz, ftroli, from)
 }
 break
